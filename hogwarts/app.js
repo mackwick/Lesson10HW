@@ -42,8 +42,57 @@ $(() => {
     $ul.append($li5)
     const $li6 = $("<li>").text("Berty Bott's Every Flavor Beans")
 
+    // Make a table
+    const $body = $("body")
+    const $table = $("<table>")
+    $body.append($table)
+    // Right above your table add an h5 that says 'Spring 2017'
+    const $h5 = $("<h5>").text("Spring 2017")
+    $table.before($h5)
+    // Inside the table add a thead element
+    const $thead = $("<thead>")
+    $table.append($thead)
+    // Inside the thead element add two th elements
+    const $th1 = $("<th>")
+    const $th2 = $("<th>")
+    $thead.append($th1, $th2)
+    // in the first th add the text Day
+    $th1.text("Day")
+    // in the second th add the text Classes
+    $th2.text("Classes")
+    // Create a tr element and add two td elements inside.
+    const $tr = $("<tr>")
+    $table.append($tr)
+    const $td1 = $("<td>")
+    const $td2 = $("<td>")
+    $tr.append($td1, $td2)
+    // in the first td add the day Monday
+    $td1.text("Monday")
+    // in the second td add the classes you are taking ( Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice, etc.)
+    $td2.text("Herbology, Potions, Charms, Care of Magical Creatures, Quidditch practice")
+    // Create more tr elements with tds inside so that you have Monday - Friday and classes each of those days
+    const $tr2 = $("<tr>")
+    $table.append($tr2)
+    const $tdtues = $("<td>").text("Tuesday")
+    const $tdtuesClass = $("<td>").text("Transfiguration, Divination, History of Magic, Defense Against the Dark Arts")
+    $tr2.append($tdtues, $tdtuesClass)
+   
+    const $tr3 = $("<tr>")
+    $table.append($tr3)
+    const $tdwed = $("<td>").text("Wednesday")
+    const $tdwedClass = $("<td>").text("Herbology, Potions, Charms, Care of Magical Creatures, Quidditch practice")
+    $table.append($tdwed, $tdwedClass)
 
-
-
+    const $tr4 = $("<tr>")
+    $table.append($tr4)
+    const $tdthur = $("<td>").text("Thursday")
+    const $tdthurClass = $("<td>").text("Transfiguration, Divination, History of Magic, Defense Against the Dark Arts")
+    $table.append($tdthur, $tdthurClass)
+  
+    const $tr5 = $("<tr>")
+    $table.append($tr5)
+    const $tdfri = $("<td>").text("Friday")
+    const $tdfriClass = $("<td>").text("Herbology, Potions, Study Hour, Charms")
+    $table.append($tdfri, $tdfriClass)
     
 });
