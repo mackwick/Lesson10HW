@@ -6,11 +6,20 @@
 
 $(() => {
 	// put jQuery in here
+
+//***************************************** */
+// YEAR 1
+//***************************************** */
+
     const $container = $("#container")
     // console.log($container)
     const $h1 = $("<h1>")
     $h1.text("Hogwarts")
     $container.append($h1)
+
+//***************************************** */
+// YEAR 2
+//***************************************** */
 
     // h2 element with your name
     const $h2 = $("<h2>").text("Mackenzie Wicker")
@@ -27,6 +36,10 @@ $(() => {
     $container.append($h42)
     // In your main.css add an attribute of font-family: fantasy; to all elements that have a class that matches your pet's class
 
+//***************************************** */
+// YEAR 3
+//***************************************** */
+
     const $ul = $("<ul>").attr("storage", "trunk")
     $container.append($ul)
 
@@ -41,6 +54,11 @@ $(() => {
     const $li5 = $("<li>").text("leash").addClass("wolf")
     $ul.append($li5)
     const $li6 = $("<li>").text("Berty Bott's Every Flavor Beans")
+    $ul.append($li6)
+
+//***************************************** */
+// YEAR 4
+//***************************************** */
 
     // Make a table
     const $body = $("body")
@@ -94,7 +112,10 @@ $(() => {
     const $tdfri = $("<td>").text("Friday")
     const $tdfriClass = $("<td>").text("Herbology, Potions, Study Hour, Charms")
     $table.append($tdfri, $tdfriClass)
-    
+  
+//***************************************** */
+// YEAR 5
+//***************************************** */
 
     // Break your wand! (select the element that contains your wand and remove it)
     $h42.remove()
@@ -110,4 +131,31 @@ $(() => {
     $head.append($h4)
     // Have your pet come back (remove your pet from the DOM, put it back in its original location)
     $h3.after($h4)
+
+//***************************************** */
+// YEAR 6
+//***************************************** */
+
+// Nosey roommate alert! hide (use jQuery method hide) to hide all your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+// Nosey roommate falls asleep 2 seconds later (chain the jQuery method delay on your hide method (give argument of at least 2000) to prevent showing your secret elements too soon.
+// Use jQuery method show to reveal all of your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+$(".secret").hide("slow").delay(2000).show("slow")
+
+// Accident! You transmogrified your pet's leash into half cabbage
+$li5.text("half cabbage")
+
+// add the class cabbage to your pet's leash. Do not replace your pet's leash's original class. Your pet, which also has the same class should remain unaffected
+$li5.addClass("cabbage")
+
+
+// Fix your pet's leash by removing the class of cabbage (be sure to keep your pet's leash's original class)
+$li5.removeClass("cabbage")
+
+
+//***************************************** */
+// YEAR 7
+//***************************************** */
+
+
+
 });
