@@ -27,5 +27,23 @@ $(() => {
     $container.append($h42)
     // In your main.css add an attribute of font-family: fantasy; to all elements that have a class that matches your pet's class
 
+    const $ul = $("<ul>").attr("storage", "trunk")
+    $container.append($ul)
 
+    const $li1 = $("<li>").text("butter beer")
+    $ul.append($li1)
+    const $li2 = $("<li>").text("invisibility cloak").addClass("secret")
+    $ul.append($li2)
+    const $li3 = $("<li>").text("magic map").addClass("secret")
+    $ul.append($li3)
+    const $li4 = $("<li>").text("time turner").addClass("secret")
+    $ul.append($li4)
+    const $li5 = $("<li>").text("leash").addClass("wolf")
+    $ul.append($li5)
+    const $li6 = $("<li>").text("Berty Bott's Every Flavor Beans")
+
+
+
+
+    
 });
