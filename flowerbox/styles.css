@@ -1,0 +1,93 @@
+* {
+    margin: 10px 30px;
+    font-family: DM sans;
+}
+
+#container {
+    margin: auto;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*********************** NAV MENU ****************************/
+
+nav {
+    height: 45px;
+    background-color: #92b2ba;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+/*********************** BANNER ****************************/
+
+#banner {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/banner.png");
+    background-size: contain;
+}
+
+#hero1 #hero2 {
+    /* position: relative;
+    top: 400px;
+    left: 500px;   I'm not sure why these won't move to the other side of the screen, but I've tried several things */
+    display: block;
+
+}
+
+#hero1 {
+    height: 40px;
+    width: 150px;
+    color: #92b2ba;
+}
+
+#hero2 {
+    height: 20px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px;
+    color: #f0a8bb;
+    background-color: white;
+}
+
+/********************* FLOWER GRID *************************/
+
+img {
+    height: 10rem;
+}
+#flowers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rowOf3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+/********************* FOOTER *************************/
+
+footer {
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
