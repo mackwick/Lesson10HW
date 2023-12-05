@@ -1,10 +1,9 @@
 * {
-    margin: 10px 30px;
     font-family: DM sans;
 }
 
 #container {
-    margin: auto;
+    width: 1000px;
     box-sizing: border-box;
     background-color: whitesmoke;
     display: flex; 
@@ -15,30 +14,27 @@
 /*********************** NAV MENU ****************************/
 
 nav {
-    height: 45px;
+    margin: 20px 100px;
+    height: 3.5em;
     background-color: #92b2ba;
     color: white;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     list-style: none;
 }
 
 /*********************** BANNER ****************************/
 
 #banner {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
+    margin: 10px 100px;
+    height: 20em;
     background-image: url("./images/banner.png");
     background-size: contain;
 }
 
 #hero1 #hero2 {
-    /* position: relative;
-    top: 400px;
-    left: 500px;   I'm not sure why these won't move to the other side of the screen, but I've tried several things */
     display: block;
-
+    /* I've tried a bunch of stuff to try to get this text to sit on the right and none of it worked. Would love help with this. */
 }
 
 #hero1 {
@@ -60,34 +56,71 @@ nav {
 /********************* FLOWER GRID *************************/
 
 img {
-    height: 10rem;
+    box-sizing: border-box;
+    height: 15em;
 }
 #flowers {
+    margin: 0 72px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .rowOf3 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .item {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
+    width: 30%;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.itemName {
+    width: 200px;
+    color: #92b2ba;
+}
+
+.cost {
+    background-color: #f0a8bb;
+    color: white;
+    width: 30px;
+}
+
+.itemName, .cost {
+    display: inline; /* also can't get this to work */
+
+}
+
+.keyWords {
+    background-color: #eeeeee;
+}
+
 
 /********************* FOOTER *************************/
 
 footer {
+    margin: 0 100px;
     background-color: #eeeeee;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 ul {
     list-style: none;
+}
+
+.footer1, .footer2, .footer3 {
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer img {
+    height: 80px;
 }
